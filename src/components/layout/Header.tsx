@@ -46,17 +46,17 @@ export function Header() {
                         style={{ animation: 'fade-in-down 0.3s' }}
                     >
                         <li><a href="#about" className="text-slate-600 hover:text-slate-900 font-bold">Sobre mim</a></li>
-                        <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Habilidades</a></li>
-                        <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Projetos</a></li>
-                        <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Contato</a></li>
+                        <li><a href="#skills" className="text-slate-600 hover:text-slate-900 font-bold">Habilidades</a></li>
+                        <li><a href="#project" className="text-slate-600 hover:text-slate-900 font-bold">Projetos</a></li>
+                        <li><a href="#contact" className="text-slate-600 hover:text-slate-900 font-bold">Contato</a></li>
                     </ul>
                 ) : null}
 
                 <ul className="md:flex flex-col gap-4 px-6 py-6 sm:flex-row sm:text-sm md:text-lg hidden sm:flex">
                     <li><a href="#about" className="text-slate-600 hover:text-slate-900 font-bold">Sobre mim</a></li>
-                    <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Habilidades</a></li>
-                    <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Projetos</a></li>
-                    <li><a href="#" className="text-slate-600 hover:text-slate-900 font-bold">Contato</a></li>
+                    <li><a href="#skills" className="text-slate-600 hover:text-slate-900 font-bold">Habilidades</a></li>
+                    <li><a href="#project" className="text-slate-600 hover:text-slate-900 font-bold">Projetos</a></li>
+                    <li><a href="#contact" className="text-slate-600 hover:text-slate-900 font-bold">Contato</a></li>
                 </ul>
             </nav>
         </header>

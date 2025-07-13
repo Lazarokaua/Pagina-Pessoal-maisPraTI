@@ -33,14 +33,14 @@ export function Skills() {
     })
 
     return (
-        <section className="px-6 py-6 text-center">
+        <section className="px-6 py-6 text-center" id="skills">
             {/* Efeito dos icones chegando ao centro */}
             {/* Botão para trocar a visualização para ver as soft-skills */}
             {/* Usar wrap para as stacks */}
             {/* toggle para softs e hards skills */}
 
 
-            <button className="text-slate-600 border px-2 py-2 rounded-3xl font-bold" onClick={changeSkill}><BolinhaDancante skill={currentSkill} />Soft <span className="font-bold pl-4"> Hard</span></button>
+            <button className="text-slate-600 border px-2 py-2 rounded-3xl font-bold cursor-pointer" onClick={changeSkill}><BolinhaDancante skill={currentSkill} />Soft <span className="font-bold pl-4 cursor-pointer"> Hard</span></button>
 
             {currentSkill === 'hard' ? <ul className="flex gap-4 flex-wrap justify-center py-4">
                 <li className="text-orange-600 text-5xl flex flex-col items-center"><FaHtml5 /><p className="text-sm">HTML5</p></li>
