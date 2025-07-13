@@ -1,5 +1,4 @@
-import { StaticImageData } from "next/image"
-
+import Image from "next/image"
 
 interface ProjectCardProps {
     url: string
@@ -9,10 +8,19 @@ interface ProjectCardProps {
     mobileAvaible?: boolean
 }
 
-export function ProjectCard({url, srcImg, titleProject, descriptionProject, mobileAvaible}: ProjectCardProps) {
+export function ProjectCard({ url, srcImg, titleProject, descriptionProject, mobileAvaible }: ProjectCardProps) {
     return (
         <div className="grid grid-cols-1 px-6 py-4 text-slate-600">
-            <a href={url} target="_blank"><img src={srcImg}  className="w-96 h-44 cursor-pointer rounded-lg transition-all duration-300"/></a>
+            <a href={url} target="_blank">
+                <Image
+                    src={srcImg}
+                    alt={titleProject}
+                    width={384}
+                    height={176}
+                    className="w-full max-w-md h-44 sm:h-56 object-cover cursor-pointer rounded-lg transition-all duration-300"
+                    priority
+                />
+            </a>
 
             <h4 className="font-bold pt-4 pb-2">{titleProject}</h4>
 
